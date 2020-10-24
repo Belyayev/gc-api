@@ -24,7 +24,7 @@ newItem.save()
 
 router.route('/:id').get((req, res) => {
     Item.findById(req.params.id)
-      .then(Item => res.json(item))
+      .then(item => res.json(item))
       .catch(err => res.status(400).json('Error: ' + err));
   });
   
@@ -36,7 +36,7 @@ router.route('/:id').get((req, res) => {
   
   router.route('/update/:id').post((req, res) => {
     Item.findById(req.params.id)
-      .then(exercise => {
+      .then(item => {
         item.description = req.body.description;
         item.quantity = req.body.quantity;
   
