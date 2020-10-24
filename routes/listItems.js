@@ -10,11 +10,11 @@ Item.find()
 
 router.route('/add').post((req, res) => {
     const description = req.body.description;
-    const isBought = req.body.isBought;
+    const quantity = req.body.quantity;
 
     const newItem = new Item({
         description,
-        isBought
+        quantity
     });
 
 newItem.save()
