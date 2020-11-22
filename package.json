@@ -5,16 +5,20 @@
   "engines": {
     "node": "12.x"
   },
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "test": "node test.js"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.2",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.10"
   },
   "devDependencies": {

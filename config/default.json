@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://mongo:mongo@cluster0.ameg5.mongodb.net/Groceries?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken"
+}
